@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="inner-box">
+      <h3>Registration Form</h3>
+      <div class="navigation">
+        <div class="nav active">
+          <p id="tag1">Name</p>
+          <div class="circle" id="circle1">1</div>
+        </div>
+        <div class="nav">
+          <p id="tag2">Contact</p>
+          <div class="circle" id="circle2">2</div>
+        </div>
+        <div class="nav">
+          <p id="tag3">Birth</p>
+          <div class="circle" id="circle3">3</div>
+        </div>
+        <div>
+          <p id="tag4">Submit</p>
+          <div class="circle" id="circle4">4</div>
+        </div>
+      </div>
+      <form action="result.html" method="GET" id="form1">
+        <h4>Basic Info:</h4>
+        <label for="box1">First Name</label>
+        <input type="text" id="box1" name="First Name">
+        <label for="box2">Last Name</label>
+        <input type="text" id="box2" name="Last Name">
+        <div class="btn">
+          <button type="button" id="next1">NEXT</button>
+        </div>
+      </form>
+
+      <form action="result.html" method="GET" id="form2">
+        <h4>Contact Info:</h4>
+        <label for="box3">Email Address</label>
+        <input type="email" id="box3" name="Email"/>
+        <label for="box4">Phone Number</label>
+        <input type="number" id="box4" name="Phone Number"/>
+        <div class="btn">
+          <button type="button" id="previous1" class="btns">PREVIOUS</button>
+          <button type="button" id="next2">NEXT</button>
+        </div>
+      </form>
+
+      <form action="result.html" method="GET" id="form3">
+        <h4>Date of Birth:</h4>
+        <label for="box5">Date</label>
+        <input type="date" id="box5" name="Date"/>
+        <label for="box6">Gender</label>
+        <input type="text" id="box6"/>
+
+        <div class="btn">
+          <button type="button" id="previous2" class="btns">PREVIOUS</button>
+          <button type="button" id="next3">NEXT</button>
+        </div>
+      </form>
+
+      <form action="result.html" method="GET" id="form4">
+        <h4>Login Details:</h4>
+        <label for="box7">username</label>
+        <input type="text" id="box7" name="Username"/>
+        <label for="box8">Password</label>
+        <input type="password" id="box8"/>
+        <div class="btn">
+          <button type="button" id="previous3" class="btns">PREVIOUS</button>
+          <button type="submit" id="next4">NEXT</button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
